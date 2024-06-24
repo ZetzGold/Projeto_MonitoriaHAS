@@ -1,0 +1,98 @@
+<div id="corpo">
+    <div id="container">
+      <div id="img_cad">
+        <div id="logotipo">
+          <img src="../../assets/logo.png" id="icone">
+          <p id="logo_txt">Monitoria HAS</p>
+        </div>
+      </div>
+      <div id="formulario">
+        <form class="example-form" [formGroup]="cadastroForm" (ngSubmit)="onEnviar()">
+          <label id="cad_titulo">Cadastrar Monitor</label>
+          <mat-form-field  class="example-full-width">
+            <mat-label>ID(Identificador)</mat-label>
+            <input  matInput placeholder="Ex. 01, 02..." formControlName="id">
+  
+            <mat-error *ngIf="cadastroForm.controls.id.hasError('required')">O ID é obrigatório</mat-error>
+  
+        </mat-form-field>
+  
+          <mat-form-field  class="example-full-width">
+              <mat-label>Nome e Sobrenome</mat-label>
+              <input  matInput placeholder="Ex. Enzo Enrico" formControlName="nome">
+  
+              <mat-error *ngIf="cadastroForm.controls.nome.hasError('required')">Nome é obrigatório</mat-error>
+              <mat-error *ngIf="cadastroForm.controls.nome.hasError('maxlength')">O nome deve ter menos de 30 caracteres</mat-error>
+  
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+              <mat-label>E-mail</mat-label>
+              <input matInput placeholder="Ex. horacio@gmail.com" formControlName="email">
+  
+              <mat-error *ngIf="cadastroForm.controls.email.hasError('required')">E-mail é obrigatório</mat-error>
+              <mat-error *ngIf="cadastroForm.controls.email.hasError('email')">E-mail inválido</mat-error>
+  
+          </mat-form-field>
+  
+  
+          <mat-form-field class="example-full-width">
+              <mat-label>Telefone com DD</mat-label>
+              <input matInput placeholder="Ex. (11)987456321..." formControlName="telefone">
+  
+              <mat-error *ngIf="cadastroForm.controls.telefone.hasError('required')">O Telefone é obrigatório</mat-error>
+              <mat-error *ngIf="cadastroForm.controls.telefone.hasError('minlength')">O Telefone deve ter mais de 2 caracteres</mat-error>
+              <mat-error *ngIf="cadastroForm.controls.telefone.hasError('maxlength')">O Telefone deve ter menos de 17 caracteres</mat-error>
+          </mat-form-field>
+  
+          <div id="disciplinas">
+            <label>Disciplinas:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Matemática</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Português</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+              <label class="form-check-label" for="inlineCheckbox3">Física</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+              <label class="form-check-label" for="inlineCheckbox4">Inglês</label>
+            </div>
+          </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Eu li e concordo com os termos de uso.
+            </label>
+          </div>
+  
+          <a routerLink="/cadastro/disponibilidade"><button class="botao">Próximo</button></a>
+  
+          <a routerLink=""><button class="botao_retornar">Retornar</button></a>
+  
+        </form>
+      </div>
+    </div>
+    
+    <div id="rodape">
+        <div>
+            <p>Matheus Camargo</p>
+            <p>Rm: 221019</p>
+            <p>Instagram: matheus.zgld</p>
+            <p>Twitter: zgld_</p>
+        </div>
+        <div id="linha_vertical"></div>
+        <div>
+            <p>Enzo Enrico</p>
+            <p>Rm: 221673</p>
+            <p>Instagram: lnox12</p>
+            <p>Twitter: Chulepaf</p>
+        </div>
+    </div>
+</div>

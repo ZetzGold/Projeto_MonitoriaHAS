@@ -1,0 +1,193 @@
+#corpo{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#container{
+    width: 100%;
+    height: 55vw;
+    display: flex;
+    flex-direction: row;
+}
+#img_cad{
+    background-image: url('../../../assets/fundo_cad.png');
+    width: 45%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+#formulario{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+form{
+    width: 80%;
+    text-align: left;
+    height: 90%;
+}
+.input{
+    background-color: green;
+}
+#flexCheckDefault{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+.form-check{
+    display: flex;
+    align-items: center;
+}
+.form-check-label{
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.example-form{
+    display: flex;
+    flex-direction: column;
+    line-height: 5vw;
+}
+#cad_titulo{
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#logotipo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.option{
+    font-size: 1.3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.linha{
+    width: 30%;
+    background-color: rgb(60, 59, 59);
+    height: 0.3vh;
+    margin-top: 0.2vw;
+    transition: 0.4s ease-in-out;
+}
+.option:hover .linha{
+    width: 100%;
+    background-color: black;
+}
+#icone{
+    height: 50%;
+    margin-left: 1vw;
+    margin-bottom: 0.5vw;
+}
+#logo_txt{
+    font-size: 2vw;
+    margin-left: 0.3vw;
+    margin-right: 8vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#rodape{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color:white;
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#linha_vertical{
+    height: 90%;
+    width: 0.1vw;
+    background-color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.botao{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #F3747B;
+    border-radius: 3vw;
+    padding: 0.3vw;
+    margin-bottom: 1vw;
+}
+.botao_retornar{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 10vw;
+    background-color: #000000;
+    border-radius: 3vw;
+    padding: 0.3vw;
+}
+#disciplinas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#inlineCheckbox1, #inlineCheckbox2, #inlineCheckbox3, #inlineCheckbox4, #inlineCheckbox5, #inlineCheckbox6, #inlineCheckbox7{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+.form-check-inline{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.fundo_cor, .fundo_horarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vw;
+    width: 8vw;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+.fundo_horarios{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.horarios{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.ter{
+    background-color: #ffa500;
+}
+.qua{
+    background-color: #ffff00;
+}
+.qui{
+    background-color: #008000;
+}
+.sex{
+    background-color: #0000ff;
+}
+.sab{
+    background-color: #4b0082;
+}
+.dom{
+    background-color: #ee82ee;
+}
+.form-check{
+    border-radius: 1000000px;
+    overflow: hidden;
+}

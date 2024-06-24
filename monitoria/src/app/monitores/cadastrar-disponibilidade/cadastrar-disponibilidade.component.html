@@ -1,0 +1,148 @@
+<div id="corpo">
+    <div id="container">
+      <div id="img_cad">
+        <div id="logotipo">
+          <img src="../../assets/logo.png" id="icone">
+          <p id="logo_txt">Monitoria HAS</p>
+        </div>
+      </div>
+      <div id="formulario">
+        <form class="example-form" [formGroup]="cadastroForm" (ngSubmit)="onEnviar()">
+          <label id="cad_titulo">Cadastrar Disponibilidade do Monitor</label>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="seg">
+                <label class="form-check-label" for="inlineCheckbox1">Seg.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor ter">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="ter">
+                <label class="form-check-label" for="inlineCheckbox2">Ter.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor qua">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="qua">
+                <label class="form-check-label" for="inlineCheckbox3">Qua.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor qui">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="qui">
+                <label class="form-check-label" for="inlineCheckbox4">Qui.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor sex">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="sex">
+                <label class="form-check-label" for="inlineCheckbox5">Sex.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor sab">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="sab">
+                <label class="form-check-label" for="inlineCheckbox6">Sab.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <div class="fundo_cor dom">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="dom">
+                <label class="form-check-label" for="inlineCheckbox7">Dom.</label>
+            </div>
+            <div class="fundo_horarios">
+                <div class="horarios">
+                    <label class="form-check-label" >Hor. Inicial:</label>
+                    <input type="time">
+                </div>
+                <div  class="horarios">
+                    <label class="form-check-label" >Hor. Final:</label>
+                    <input type="time">
+                </div>
+            </div>
+          </div>
+          
+          <button class="botao">Cadastrar</button>
+  
+          <a routerLink="/cadastro"><button class="botao_retornar">Retornar</button></a>
+  
+        </form>
+      </div>
+    </div>
+    
+    <div id="rodape">
+        <div>
+            <p>Matheus Camargo</p>
+            <p>Rm: 221019</p>
+            <p>Instagram: matheus.zgld</p>
+            <p>Twitter: zgld_</p>
+        </div>
+        <div id="linha_vertical"></div>
+        <div>
+            <p>Enzo Enrico</p>
+            <p>Rm: 221673</p>
+            <p>Instagram: lnox12</p>
+            <p>Twitter: Chulepaf</p>
+        </div>
+    </div>
+</div>
